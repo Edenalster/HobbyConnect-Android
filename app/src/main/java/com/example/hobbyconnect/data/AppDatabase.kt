@@ -6,6 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database(entities = [PostEntity::class, FollowerEntity::class, UserEntity::class,UserLikesEntity::class], version = 2, exportSchema = false)
+
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun postDao(): PostDao
