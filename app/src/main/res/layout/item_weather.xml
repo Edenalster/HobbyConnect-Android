@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- City Name -->
+        <TextView
+            android:id="@+id/weatherCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="City Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Weather Temperature -->
+
+        <!-- Weather Conditions -->
+        <TextView
+            android:id="@+id/weatherTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Temperature: "
+            android:textSize="16sp" />
+
+        <!-- Optional Weather Icon -->
+        <TextView
+            android:id="@+id/weatherConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Conditions: Sunny"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/weatherIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/weather_icon_description"
+            android:src="@drawable/rounded_corners"
+            android:visibility="gone" /> <!-- Set visible when an icon is available -->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
